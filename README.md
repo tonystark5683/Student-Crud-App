@@ -1,27 +1,46 @@
-# Frontend
+# Frontend - Student Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.9.
+This is the frontend of the Student Management System built using Angular. It interacts with the backend to perform CRUD operations on student records.
 
-## Development server
+## Features
+- Display a list of students
+- Add a new student
+- View details of a student
+- Edit a student's information
+- Delete a student
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prerequisites
 
-## Code scaffolding
+- Node.js (v16 or above)
+- Angular CLI (v14 or above)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+1. Clone the repository to your local machine.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Install dependencies by running:
+   - `npm install`
 
-## Running unit tests
+3. Update the API URL:
+   - In the `src/app/services/student.service.ts` file, update the `apiUrl` to point to the backend server.
+     For example:
+     ```typescript
+     apiUrl = "http://localhost:3000"; 
+     ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Run the application locally:
+   - To start the development server, use:
+     - `ng serve`
 
-## Running end-to-end tests
+   - The application will be accessible at `http://localhost:4200`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Usage
 
-## Further help
+Once the app is running, you can perform the following actions:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **View all students:** The home page displays a list of all students.
+- **Add a new student:** Fill out the form and click "Add Student" to add a student.
+- **View student details:** Click on a student from the list to view their details.
+- **Edit a student:** Click the "Edit" button on a student's details page to update their information.
+- **Delete a student:** Click the "Delete" button to remove a student.
+
