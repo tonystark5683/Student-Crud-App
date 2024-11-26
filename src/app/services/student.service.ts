@@ -6,7 +6,7 @@ import Student from '../interface/student';
   providedIn: 'root',
 })
 export class StudentService {
-  apiUrl = "http://localhost:3000";
+  apiUrl = "https://student-crud-app-backend.onrender.com";
   httpClient = inject(HttpClient); // if we are injecting something then we have to add in the provider
   constructor() {}
 
