@@ -1,0 +1,60 @@
+<mat-toolbar color="primary" class="flex items-center justify-between shadow-md">
+  <!-- Left: Menu Icon -->
+  <div class="flex items-center space-x-4">
+    <button
+      mat-icon-button
+      class="hover:bg-blue-100 p-2 rounded-full transition"
+      aria-label="Open Menu"
+    >
+      <mat-icon fontIcon="menu" class="text-xl"></mat-icon>
+    </button>
+    <span class="text-lg font-semibold tracking-wide">Student App</span>
+  </div>
+
+  <!-- Center: Navigation Links -->
+  <div class="hidden md:flex space-x-6">
+    <a
+      routerLink="/home"
+      routerLinkActive="text-white font-bold"
+      class="text-sm text-gray-200 hover:text-white transition"
+    >
+      Home
+    </a>
+    <a
+      routerLink="/students"
+      routerLinkActive="text-white font-bold"
+      class="text-sm text-gray-200 hover:text-white transition"
+    >
+      Students
+    </a>
+    <a
+      routerLink="/about"
+      routerLinkActive="text-white font-bold"
+      class="text-sm text-gray-200 hover:text-white transition"
+    >
+      About
+    </a>
+  </div>
+
+  <!-- Right: Theme Toggle & Profile Icon -->
+  <div class="flex items-center space-x-4">
+    <button
+      mat-icon-button
+      class="hover:bg-blue-100 p-2 rounded-full transition"
+      aria-label="Toggle Theme"
+    >
+      <mat-icon fontIcon="dark_mode" class="text-xl"></mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      class="hover:bg-blue-100 p-2 rounded-full transition"
+      aria-label="User Profile"
+    >
+      <mat-icon fontIcon="account_circle" class="text-xl"></mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+
+<div class="p-4">
+  <router-outlet></router-outlet>
+</div>
